@@ -4,6 +4,7 @@ import pandas as pd
 import plotly.express as px
 
 app = dash.Dash(__name__)
+server = app.server
 
 data_url = "https://raw.githubusercontent.com/Haithem-alosta/Assignment3/main/best-selling%20game%20consoles.csv"
 data = pd.read_csv(data_url)
